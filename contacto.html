@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oredente contacto</title>
+  <meta name="description" content="Nos encontramos en Justo José de Urquiza 71, Cordoba capital,Cordoba.">
+  <meta name="keyword" content="cordoba, gmail, telefono, consulta, especialidad, nombre, mapa">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- inicia nav -->
+
+<nav class="navbar navbar-expand-lg  fixed-top sticky-top mt-8">
+  <a class="navbar-brand logoTexto" href="index.html">
+    <img src="imagenes/logo.png" alt="logo"> OREDENTE CENTRO ODONTOLOGICO
+  </a>
+  <button class="navbar-toggler button navbar-dark " type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation"> Menu
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="especialidades.html">ESPECIALIDADES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consejos.html">CONSEJOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">CONTACTO</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- cierra nav -->
+
+<body>
+  <main>
+    <!-- Empieza Contacto-->
+    <h2 class="py-5"> CONTACTO </h2>
+    <div class="row wow fadeInUp mx-5">
+
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="imagenes/icono-ubicacion.png" class="mx-5 iconoUbicacion" alt="ubicacion">
+            <p>Justo José de Urquiza 71, Cordoba capital, Cordoba</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/icono-correo.png" class="mx-5 iconoCorreotele" alt="email">
+            <p>oredentecentro@gmail.com</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/icono-telefono.png" class="mx-5 iconoCorreotele" alt="telefono">
+            <p>+3115988953 <br> +3112641818</p>
+          </div>
+        </div>
+
+        <div class="form">
+          <div id="sendmessage"> <strong> Envia tu consulta y a la brevedad nos contactaremos:</strong></div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y apellido"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Telefono"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <select id="Especialidad" class="form-control">
+              <option name="I">Especialidad de su consulta</option>
+              <option name="I">Implantes</option>
+              <option name="B">Blanqueamiento dental</option>
+              <option name="OR">Ortodoncia</option>
+              <option name="E">Endodoncia</option>
+              <option name="I">Periodoncia</option>
+              <option name="B">Odontopediatria</option>
+              <option name="OR">Diagnostico</option>
+              <option name="E">Cirugia bucal</option>
+              <option name="E">Protesis</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escriba su consulta"
+            placeholder="Escriba su consulta"></textarea>
+          <div class="validation"></div>
+        </div>
+        <div class="text-center">
+          <div id="success"></div>
+          <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar
+            consulta</button>
+        </div>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <div class="map mb-4 mb-lg-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0777669924014!2d-64.19680798515836!3d-31.4119834031815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987fd488df5f%3A0xae453b1e4cfe442a!2sJusto%20Jos%C3%A9%20de%20Urquiza%2071%2C%20X5000KPA%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1621454386321!5m2!1ses-419!2sar"
+            frameborder="0" style="border:0; width: 100%; height: 412px;" allowfullscreen>></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+    </div>
+    </section>
+    <br>
+    <br>
+    <!-- Termina Contacto-->
+
+    <!-- Empieza Obra social-->
+    <div class="fondObras">
+      <div class="container mx-10">
+        <div class="row blog">
+          <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#blogCarousel" data-slide-to="1"></li>
+              </ol>
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/pami.png" alt="obra social pami" class="py-5 text-center">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/osde.png" alt="obra social osde" class="py-5 text-center">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/apross.png" alt="obra social apross" class="py-5 text-center">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/gea.png" alt="obra social gea" class="py-5 text-center">
+                      </a>
+                    </div>
+                  </div>
+                  <!--.row-->
+                </div>
+                <!--.item-->
+
+                <div class="carousel-item mx-10">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/aca.png" alt="obra social aca" class="py-5 text-center">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/sancor.png" alt="obra social sancor" class="py-5 text-center">
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/hope.png" alt="obra social hope" class="py-5 text-center">
+                      </a>
+                    </div>
+
+                    <div class="col-md-3">
+                      <a href="#">
+                        <img src="imagenes/swis.png" alt="obra social swiss medical" class="py-5 text-center">
+                      </a>
+                    </div>
+                  </div>
+                  <!--.row-->
+                </div>
+                <!--.item-->
+
+              </div>
+              <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina Obra social -->
+
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 text-left">
+          <h6 class="text-muted lead">CONTACTO:</h6>
+          <h6 class="text-muted">
+            Justo José de Urquiza 71<br>
+            Cordoba Capital, Argentina.<br>
+            Teléfonos: 3115988953 – 3112641818.<br>
+          </h6>
+        </div>
+
+        <div class="col-xs-12 col-md-4 text-left">
+          <h6 class="text-muted lead">HORARIOS DE ATENCION</h6>
+          <h6 class="text-muted">
+            Lunes y Martes: de 10 a 13 y de 14 a 18 hs.<br>
+            Miércoles: de 14 a 18 hs.<br>
+            Jueves y Viernes: de 9 a 20 hs.<br>
+          </h6>
+        </div>
+
+        <div class="col-xs-12 col-md-4 text-right">
+          <h6 class="text-muted lead">SIGUENOS EN LAS REDES</h6>
+          <div class="redes-footer">
+            <a href="https://www.facebook.com/"><img src="imagenes/facebook-2.png" width="20px" height="auto"></a>
+            <a href="https://twitter.com/"><img src="imagenes/twitter-2.png" width="30px" height="20px"></a>
+            <a href="https://www.youtube.com/"><img src="imagenes/youtube-2.png" width="20px" height="auto"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-right">
+          <p class="text-muted small">Orecchia, Sofia Aabella @2021.<br> Todos los derechos reservados.</p>
+        </div>
+      </div>
+  </footer>
+  <!-- Cierra Footer -->
+
+  <!--- Optional Scrip -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
