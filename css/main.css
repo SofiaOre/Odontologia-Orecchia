@@ -383,16 +383,13 @@ section .section-title {
 .our-skills {
   padding: 70px 0px 20px; }
 
-.our-skills .icon {
-  padding: 10px 0px;
-  margin: -45px auto 20px;
-  border-radius: 10px;
-  width: 90px; }
 
 .our-skills .icon {
   font-size: 40px;
   margin: 0 auto;
-  display: table; }
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display:flex ; }
 
 .our-skills .box-shadow {
   margin-bottom: 70px;
