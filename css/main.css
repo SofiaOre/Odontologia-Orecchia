@@ -16,13 +16,19 @@ nav {
   background-color: #fff; }
 
 /*Fin operacion Condicional*/
-.button {
-  border: solid 2px; }
 
-.navbar-brand {
+
+.custom-toggler.navbar-toggler {
+  border: solid 2px #5ec6ca;
+  position: relative;
+}
+
+
+ .navbar-brand {
   font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
-  color: #5ec6ca; }
+  color: #5ec6ca;  
+}
 
 .nav-link {
   color: #5ec6ca; }
@@ -58,9 +64,7 @@ li > a:after {
 a:hover:after {
   left: 0; }
 
-.navbar-toggler {
-  color: #5ec6ca;
-  border: solid 1px #1c1c1c; }
+
 
 /* FIN NAV BAR*/
 /*--------------------------------------------------------------
@@ -471,3 +475,6 @@ h3 {
   background-color: #3fbbc0;
   text-align: center;
   align-items: center; }
+
+
+  
