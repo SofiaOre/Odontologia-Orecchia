@@ -17,10 +17,8 @@ nav {
 
 /*Fin operacion Condicional*/
 
-flex-grow-0
-
 .custom-toggler.navbar-toggler {
-  border: solid 2px #5ec6ca;
+  border: solid 2px #3fbbc0;
   position: relative;
 }
 
@@ -28,11 +26,11 @@ flex-grow-0
  .navbar-brand {
   font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
-  color: #5ec6ca;  
+  color: #3fbbc0;  
 }
 
 .nav-link {
-  color: #5ec6ca; }
+  color: #3fbbc0; }
 
 /*Operacion matematica en padding*/
 .nav-item {
